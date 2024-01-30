@@ -6,6 +6,7 @@
     <title>Library Project</title>
   </head>
   <body>
+            <!---->
     <main
       style="
         display: flex;
@@ -14,32 +15,37 @@
         text-align: center;
       "
     >
-      <div>
+
+    <div>
         <h1>Library Project</h1>
         <div id="library">
           <!-- Add table here -->
+          <div>
+            <table>
+              <tr>
+            <td><label for="bookTitle">Enter the book title: </label></td>
+            <td><input type="text" id="bookTitle"></td></tr>
+            <tr>
+            <td><label for="bookAuthor">Enter the author's name: </label></td>
+            <td><input type="text" id="bookAuthor"></td></tr>
+            <tr>
+            <td><label for="bookRead">Have you read it? </label></td>
+            <td><input type="checkbox" id="bookRead"></td></tr>
+            <tr><td><input type="button" id="bookButton" value="Add this book"></td></tr>
+          </table>
+          </div>
           <table id="table" style="min-width: 680px; margin: 2rem">
             <thead>
               <tr>
-                <th>Title</th>
+                <th id="counters">Title</th>
                 <th>Author</th>
                 <th>Read</th>
+                <th>Number</th>
+                <th></th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>Name of the Wind</td>
-                <td>Patrick Rothfuss</td>
-                <td>
-                  <input
-                    type="checkbox"
-                    name="read"
-                    id="readLibraryCheckbox"
-                    checked
-                    disabled
-                  />
-                </td>
-              </tr>
+            <tbody id="tablebody">
+               
             </tbody>
           </table>
         </div>
